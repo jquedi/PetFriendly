@@ -1,0 +1,324 @@
+body {
+	background: #9c9d9d1c;	
+	margin: 0px;
+}
+html {
+      margin: 0;
+      padding: 0;
+    }
+.pieTituloSub{
+	border: none;
+    background: none;
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #636061;
+    cursor: pointer;
+    text-align: left;
+}
+.menuB{
+	background: none;
+    cursor: pointer;
+    border: none;
+    color: darkblue;
+    font-weight: 800;
+    margin-right: 33px;
+    position: relative;
+	font-size: 25px;
+}
+.subMenu{
+    background: white;
+    top: 47px;
+    list-style-type: none;
+    padding: 0 10px 5px 10px;
+    margin: -20px 51px 0 0;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    width: 290Px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.subMenu2{
+    background: lightsteelblue;
+    position: fixed;
+    top: 146px;
+    list-style-type: none;
+    padding: 0 10px 5px 10px;
+    margin: 20px 50px 0 0;
+}
+.imgSubMenu{
+	height: 20px;
+}
+.subMenuText{
+    vertical-align: super;
+}
+.menuLi2 {
+    margin-top: 20px;
+    border-bottom: solid;
+    padding-bottom: 20px;
+    border-bottom-color: dimgray;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
+.menuLi {
+    margin-top: 25px;
+}
+.submenuLi{
+	margin: 10px 0px 0px 0px;
+}
+.submenuB{
+	background: none;
+    border: none;
+    color: #8e8787;
+    width: max-content;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.tituloSesiones{
+	color: #FF9800;
+    font-size: 36px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.imagenesSesiones{
+	margin: 0px 30px 0 30px;
+    height: 250px;
+}
+.divSesiones{
+	height: 300px;
+    width: 90%;
+    margin: auto;
+}
+.parrafoSesiones{
+	color: #9E9E9E;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+.tituloActividades{
+	width: 100%;
+    text-align: center;
+    font-size: 60px;
+    margin: 50px 0px 50px 0px;
+    font-family: sans-serif;
+    color: royalblue;
+}
+.divActividades{
+	width: 90%;
+    margin: auto;
+    background: white;
+    margin-bottom: 100px;
+}
+.imgActividad{
+	width: 100%;
+	max-width: 500px;
+}
+.pActividades{
+	margin-left: 25px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-right: 75px;
+}
+.h2Actividades{
+	color: darkblue;
+    font-size: 27px;
+    margin-left: 25px;
+    font-family: sans-serif;
+}
+.pActividades2{
+    font-size: 20px;
+    margin: auto;
+    color: #7d7d7d;
+    font-family: sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+	width:	90%;
+}
+.aActividades{
+	text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.pataPerro{
+	height: 35px;
+    top: 7px;
+    position: relative;
+}
+.talleres{
+	font-size: 22px;
+    font-family: sans-serif;
+    color: darkslategrey;
+}
+.botonTalleres{
+	
+}
+.botonBonos{
+	
+}
+#titulo{
+	text-align: center;
+    margin: 50px 0px 50px 0px;
+    color: darkblue;
+    font-size: 53px;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+#banner{
+	width: 100%;
+}
+#subMenuSocial {
+	right: 153px;
+	display: none;
+}
+#subMenuContacto {
+	right: 30px;
+	display: none;
+}
+#encabezado{
+	height: 80px;
+    background: #ECF0F1;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+	z-index: 3000;
+	transition: 0.2s;
+}
+#logoDiv{
+    height: 80px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin: 0;
+	transition: 0.2s;
+}
+#logoB{
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+#logoDiv2{
+    position: relative;
+    top: -10px;
+    bottom: 0;
+    margin: 0;
+    transition: 0.2s;
+}
+#logoB2{
+    background: none;
+    cursor: pointer;
+    border: none;
+}
+#logoImg{
+	height: 78px;
+	transition: 0.2s;
+}
+#logoImg2{
+	height: 78px;
+	transition: 0.2s;
+}
+#logoArikel{
+	position: relative;
+    bottom: 13px;
+    font-size: 24px;
+}
+#menu{
+	position: initial;
+    padding-left: 13px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    top: 35px;
+    margin-right: 0px;
+    background: white;
+    height: 100%;
+	padding: 5px;
+    transition: 0.2s;
+}
+#listaMenu{
+    list-style-type: none;
+    padding: 0px;
+    position: fixed;
+    right: 0px;
+    margin: 20px 15px 0px 0px;
+    background: lightsteelblue;
+    border-radius: 10px 0px 10px 10px;
+	display: none;
+	border: solid;
+    border-width: 2px;
+	height: 280px;
+	width: 250px;
+}
+#triangulo{
+	width: 0;
+    height: 0;
+    border-right: 25px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 25px solid transparent;
+    border-bottom: 25px solid lightsteelblue;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+#triangulo1{
+    width: 0;
+    height: 0;
+    border-right: 27px solid transparent;
+    border-top: 7px solid transparent;
+    border-left: 27px solid transparent;
+    border-bottom: 27px solid black;
+    position: absolute;
+    top: -34px;
+    right: -2px;
+}
+.triangulo2{
+	width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 5px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid white;
+    position: absolute;
+    top: -15px;
+    right: 182px;
+}
+#botonMenu{
+	position: fixed;
+    right: 17px;
+    z-index: 1320;
+    top: 9px;
+    display: none;
+    height: 28px;
+    background: none;
+    border: none;
+	margin-top: 23px;
+	cursor: pointer;
+	transition: 0.2s;
+}
+.menuIcon{
+	background: lightsteelblue;
+    height: 6px;
+    width: 30px;
+    border-radius: 7px;
+    margin-bottom: 3px;
+}
+#menuContacto{
+}
+#contenedor{
+	position: relative;
+    top: 85px;
+}
+#imgHorus{
+	width: 100%;
+}
+#a1{
+	font-size: 25px;
+    font-family: sans-serif;
+}
+#a2{
+	color: #2f5ba4;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 700;
+}

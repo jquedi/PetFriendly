@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+		<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+	</head>
+	
+	<body>
+	
+	
+		<div id="encabezado">
+			
+			<div id="menu">
+			<table style="WIDTH: 100%;">
+				<tr>
+					<td style="width: 33%;text-align: center;">
+						<button class="menuB" id="menuNosotros"  onclick="document.location='actividades.html'">ACTIVIDADES</button>
+					</td>
+					<td style="width: 33%;text-align: center; ">
+						<div id="logoDiv2">
+							<button id="logoB"  onclick="document.location='index.html'">
+								<img src="imagenes\LogoConjunto.PNG" id="logoImg2">
+							</button>
+						</div>
+					</td>
+					
+					<td style="width: 33%;text-align: center;">
+						<button class="menuB" id="menuContacto">RESERVA</button>
+					</td>
+				</tr>
+			</table>
+			</div>	
+			
+			<!-- submenus horizontal -->
+			<div style="WIDTH: 100%;" id="subMenuContacto">
+				<table style="WIDTH: 100%;">
+					<tr>
+						<td style=" width: 33%;">
+							
+						</td>
+						<td style=" width: 33%;">
+							
+						</td>
+						<td style=" width: 33%;">
+							<ul class="subMenu" >
+								<li class="submenuLi" style=" border-bottom: solid;border-width: 2px;color: #8e8787;padding-top: 10px;"><button class="submenuB" onclick="document.location='registroComunicacion.html'"><span class="subMenuText">Sesiones de Comunicación</span></button></li>
+								<li class="submenuLi" style=" border-bottom: solid; border-width: 2px; color: #8e8787; "><button class="submenuB" onclick="document.location='registroParticulares.html'"><span class="subMenuText">Sesiones Particulares</span></button></li>
+								<li class="submenuLi" style=" border-bottom: solid; border-width: 2px; color: #8e8787; "><button class="submenuB" onclick="document.location='registroTalleres.html'"><span class="subMenuText">Talleres</span></button></li>
+								<li class="submenuLi" style=" border-bottom: solid; border-width: 2px; color: #8e8787; "><button class="submenuB" onclick="document.location='registroBonos.html'"><span class="subMenuText">Nuestros bonos</span></button></li>
+								<li class="submenuLi"><button class="submenuB" onclick="document.location='registroPeluqueria.html'"><span class="subMenuText">Peluqueria canina</span></button></li>
+							</ul>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<!-- Contenido -->
+		
+		<div id="contenedor">
+			
+		<div style="width: 600px;margin: auto;background: white;height: 200px;text-align: center;margin-top: 30px;margin-bottom: 30px;border: solid;border-width: 1px;border-radius: 10px;">
+			<table style=" margin: auto; height: 100%;">
+				<tr>
+					<td colspan ="2">
+						<span class="talleres" style="font-family: sans-serif;font-size: 30px;font-weight: 600;color: lightcoral;text-decoration-line: underline;">Bono de 4 clases de Comunicación</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="talleres" style="font-size: 20px;font-weight: 500;color: crimson;text-decoration: line-through;">32€</span><span class="talleres" style="color: limegreen;font-size: 20px;font-weight: 600;"> --> </span><span class="talleres" style="color: limegreen;font-size: 30px;font-weight: 600;">25€</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan ="2">
+						<button class="botonBonos" id="bono1" data="1" >Comprar</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<div style="width: 600px;margin: auto;background: white;height: 200px;text-align: center;margin-top: 30px;margin-bottom: 30px;border: solid;border-width: 1px;border-radius: 10px;">
+			<table style=" margin: auto; height: 100%;">
+				<tr>
+					<td colspan ="2">
+						<span class="talleres" style="font-family: sans-serif;font-size: 30px;font-weight: 600;color: lightcoral;text-decoration-line: underline;">Bono de 10 clases de Particulares</span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<span class="talleres" style="font-size: 20px;font-weight: 500;color: crimson;text-decoration: line-through;">400€</span><span class="talleres" style="color: limegreen;font-size: 20px;font-weight: 600;"> --> </span><span class="talleres" style="color: limegreen;font-size: 30px;font-weight: 600;">300€</span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan ="2">
+						<button class="botonBonos" id="bono2" data="2" >Comprar</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+	
+	<div id="divPagoRegistro" style="display: none;">
+	<table style="width:500px;margin: auto;">
+	
+	<tr>
+	<td>
+	<form id="form" action="registro.php" method="POST" style="margin-bottom: 50px;">
+		<div style="width: 500px;margin: auto;">
+			<table>
+				<tr>
+					<td colspan="2">
+						<input class="inputForm" id="nombre" type="text" name="nombre" placeholder=" Nombre" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="inputForm" id="apellidos" type="text" name="apellidos" placeholder=" Apellidos" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="inputForm" id="dni" type="text" name="dni" placeholder=" DNI" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="inputForm" id="correo" type="email" name="correo" placeholder=" E-mail" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="inputForm" id="movil" type="number" name="movil" placeholder=" Telefono" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input  style="width: 60px;font-size: 30px;color: seagreen;" class="inputForm" type="text" id="precio" name="precio" readonly="true">
+					</td>
+					<td>
+						<input  style="" class="inputForm" type="text" id="sesiones" name="sesiones" readonly="true">
+					</td>
+				</tr>
+			</table>
+		</div>
+	</form>
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<button id="registro" style="margin-bottom: 50px;height: 45px;width: 130px;font-size: 18px;font-family: sans-serif;border-radius: 50px;border: none;background: limegreen;">Pagar ahora</button> <p id="comprobacion" style="color: red; display: none;">Algun campo no se ha completado correctamente</p>
+	</td>
+	</tr>
+	
+	<tr>
+	<td>
+	<div id="paypal-button-container" style=" width: 500px; margin: auto;display:none;"></div>
+	</td>
+	</tr>
+	</table>
+	</div>
+			
+		</div>
+		
+		<!-- Pie de pagina -->
+		
+		<div id="piePagina" style="background:white;height: 361px;width: 100%;border-top-right-radius: 893px 77px;margin-top: 85px;min-width: 1040px;">
+		
+			<table style="height: 100%;width: 100%;">
+			
+				<tr>
+					<td>
+						<div>
+							<img style="height: 167px;" src="imagenes/Logo extendido.PNG">
+						</div>
+					</td>
+					<td>
+						<div>
+							<table>
+								<tr>
+									<td>
+										<a style=" color: #525252; font-size: 21px; font-family: sans-serif;">COLABORADORES</a>
+										<table style=" border-left: groove; border-width: 2px; margin-top: 10px; margin-bottom: 10px;">
+											<tr>
+												<td>
+													<a class = "pieTituloSub" href="">ArikelK9</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a class = "pieTituloSub" href="https://cinemacar.es/">CinemaCar Alicante</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a class = "pieTituloSub" href="">Tienda Animal</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<a class = "pieTituloSub" href="">Peluqueria Canina Noseque</a>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<a style=" color: #525252; font-size: 21px; font-family: sans-serif;">RESPONSABILIDAD SANITARIA</a>
+										<table style=" border-left: groove; border-width: 2px; margin-top: 10px; margin-bottom: 10px;">
+											<tr>
+												<td>
+													<button class = "pieTituloSub">Obligaciones de los clientes</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<button class = "pieTituloSub">Compromiso y obligaciones de la empresa</button>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<button class = "pieTituloSub">Sistemas de seguridad sanitaria</button>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td style="">
+										<img style="HEIGHT: 40px;" src="imagenes/iconoLlamar.PNG">
+										<a style="font-size: 26px;font-family: sans-serif;vertical-align: super;color: #8c8a8b;">691 203 619</a>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</td>
+					<td>
+						<div>
+							<table>
+								<tr>
+									<td>
+										<a style=" color: #525252; font-size: 21px; font-family: sans-serif;">LOCALIZACIÓN</a>
+										<table style=" border-left: groove; border-width: 2px; margin-top: 10px; margin-bottom: 10px;">
+											<tr>
+												<td>
+													<div>
+													<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1859.7812705334788!2d-0.506735778746353!3d38.37751569305788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237ef13b866a1%3A0x2d091f2fb77a19d0!2sCinemacar!5e0!3m2!1ses!2ses!4v1593441251821!5m2!1ses!2ses" width="400" height="300" frameborder="0" style="border:0;height: 100%;width: 100%;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+													</div>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div style="background: #949494;color: white;height: 30px;width: 190px;padding: 7px 10px 0px 7px;">
+											<a style="font-family: sans-serif;">2020 - GRUPO ARIKEL</a>
+										</div>
+									</td>
+								</tr>
+							</table>
+							
+						</div>
+					</td>
+				</tr>
+			
+			</table>
+		</div>
+		
+		
+		
+	
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+	<script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+	<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=EUR" data-sdk-integration-source="button-factory"></script>
+	<script type="text/javascript">
+	
+	
+		var group = 0;
+		var precio = 0;
+		var sesiones = 0;
+	
+	
+	$(document).ready(function(){
+	
+	
+	
+		document.getElementById("nombre").onchange = resetBoton;
+		document.getElementById("apellidos").onchange = resetBoton;
+		document.getElementById("dni").onchange = resetBoton;
+		document.getElementById("correo").onchange = resetBoton;
+		document.getElementById("movil").onchange = resetBoton;
+	  
+		paypal.Buttons({
+					style: {
+						shape: 'pill',
+						color: 'gold',
+						layout: 'vertical',
+						label: 'paypal',
+          
+					},
+					createOrder: function(data, actions) {
+						return actions.order.create({
+							purchase_units: [{
+								amount: {
+									value: precio
+								}
+							}]
+						});
+					},
+					onApprove: function(data, actions) {
+						return actions.order.capture().then(function(details) {
+
+							var nombre = $("#nombre").val();
+							var apellidos = $("#apellidos").val();
+							var dni = $("#dni").val();
+							var correo = $("#correo").val();
+							var movil = $("#movil").val();
+				
+							$.ajax({
+								url: "registroBono.php",
+								method: "POST",
+								data: {nombre: nombre, apellidos: apellidos, dni: dni, correo: correo, movil: movil, group: group, sesiones: sesiones},
+								success: function(data){
+									alert("Se ha registrado tu compra, en breve recibirá un correo electronico con la confirmacion de su reserva a la siguiente dirección: " + correo + " (Compruebe su bandeja de correo no deseado)");
+									window.location.reload();
+								}
+							})
+						});
+					}
+				}).render('#paypal-button-container');
+		
+		
+			function resetBoton(){
+				if(document.getElementById("comprobacion").style.display == "initial"){
+					document.getElementById("comprobacion").style.display = "none";
+					document.getElementById("registro").style.background = "limegreen";
+				}
+			}
+		
+		
+		
+			$("#registro").click(function(){
+				if(comprobarCampos() == true){
+					$("#paypal-button-container").slideDown();
+					document.getElementById("comprobacion").style.display = "none";
+					document.getElementById("nombre").setAttribute("readonly", "true");
+					document.getElementById("apellidos").setAttribute("readonly", "true");
+					document.getElementById("dni").setAttribute("readonly", "true");
+					document.getElementById("correo").setAttribute("readonly", "true");
+					document.getElementById("movil").setAttribute("readonly", "true");
+					
+				}else{
+					document.getElementById("comprobacion").style.display = "initial";
+					document.getElementById("registro").style.background = "#e63030d1";
+				}
+				
+			});
+		
+
+			
+			function comprobarCampos(){
+				var valueNombre = document.getElementById("nombre").value;
+				var valueApellidos = document.getElementById("apellidos").value;
+				var valueDNI = document.getElementById("dni").value;
+				var valueCorreo = document.getElementById("correo").value;
+				var valueMovil = document.getElementById("movil").value;
+				
+				if((valueNombre.length > 1) &&(valueApellidos.length > 1) &&(valueDNI.length > 7) &&(valueCorreo.length > 8) &&(valueMovil.length > 8)){
+					return true;
+				}else{
+					return false;
+				}
+			}
+			
+			
+			function datosBono(){
+				$.ajax({
+					url: "datosBono.php",
+					method: "POST",
+					data: {group: group},
+					success: function(data){
+						$reg = data;
+						$pos1 = $reg.indexOf('#');
+						$sesiones = $reg.substring(3, $pos1);
+						$precio = $reg.substring($pos1+1);
+						precio = $precio;
+						$("#precio").val(precio + "€");
+						sesiones = $sesiones;
+						$("#sesiones").val(sesiones);
+						
+						
+					}
+				})
+			}
+		
+		
+			$(".botonBonos").click(function(){
+				group = $(this).attr("data");
+				
+				datosBono();
+				
+				
+				
+						
+				startAnimation();
+				function startAnimation(){
+					$("#divPagoRegistro").slideDown();
+				}
+						
+
+				
+			});
+			
+			
+			
+	
+		<!-- Abrir subMenu horizontal-->
+		
+			function restaurarTransicion(){
+				$(".subMenu").css("transition", "none");
+			}
+			$("#menuContacto").click(function(){
+				restaurarTransicion();
+				var div = $("#subMenuContacto");
+				div.fadeToggle();
+			});
+			
+			
+			<!-- reset subMenus -->
+			
+		
+		function resetMenuHorizontal(){
+			
+			$("#subMenuContacto").hide();
+		
+		}
+		
+		
+		
+		if(window.addEventListener) {
+			window.addEventListener("scroll", scrollPage)
+			window.addEventListener("resize", scrollPage)
+		}
+		scrollPage();
+		
+		
+		<!-- scroll -->
+		
+		function scrollPage(){
+			var top;
+			top = scrollTop()
+
+			
+			<!-- Reducir ancho -->
+			
+			if(window.innerWidth < 1030) { 
+				resetMenuHorizontal();
+				
+
+				if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+					$(".subMenu").css("transition", "inherit");
+					document.getElementById("encabezado").style.height = "44px";
+					document.getElementById("logoDiv2").style.height = "44px";
+					document.getElementById("logoImg2").style.height = "40px";
+					document.getElementById("logoImg2").style.margin = "0px";
+					document.getElementById("menu").style.top = "8px";
+					document.getElementById("subMenuContacto").style.top = "20px";
+					$(".subMenu2").css({"transition": "inherit","top": "115px"});
+
+				}else{
+					$(".subMenu").css("transition", "inherit");
+					document.getElementById("encabezado").style.height = "80px";
+					document.getElementById("logoDiv2").style.height = "80px";
+					document.getElementById("logoImg2").style.height = "78px";
+					document.getElementById("logoImg2").style.margin = "0px 0px 0px 0px";
+					document.getElementById("menu").style.top = "35px";
+					document.getElementById("subMenuContacto").style.top = "47px";
+					$(".subMenu2").css({"transition": "inherit","top": "146px"});
+				}
+
+				
+				<!-- Amplicar ancho -->
+				
+			}else{
+				if(document.body.scrollTop > 50 || document.documentElement.scrollTop > 50){
+					$(".subMenu").css("transition", "inherit");
+					document.getElementById("encabezado").style.height = "44px";
+					document.getElementById("logoDiv2").style.height = "44px";
+					document.getElementById("logoImg2").style.height = "40px";
+					document.getElementById("logoImg2").style.margin = "0px";
+					document.getElementById("menu").style.top = "8px";
+					document.getElementById("subMenuContacto").style.top = "20px";
+				}else{
+					$(".subMenu").css("transition", "inherit");
+					document.getElementById("encabezado").style.height = "80px";
+					document.getElementById("logoDiv2").style.height = "80px";
+					document.getElementById("logoImg2").style.height = "78px";
+					document.getElementById("logoImg2").style.margin = "0px 0px 0px 0px";
+					document.getElementById("menu").style.top = "35px";
+					document.getElementById("subMenuContacto").style.top = "47px";
+				}
+			}
+			
+			
+		}
+		
+		<!-- Obtener posicion scroll -->
+		
+		function scrollTop() {
+			var top = 0;
+			if (typeof(window.pageYOffset) == "number") {
+				top = window.pageYOffset;
+			} else if (document.body && document.body.scrollTop) {
+				top = document.body.scrollTop;
+			} else if (document.documentElement && document.documentElement.scrollTop) {
+				top = document.documentElement.scrollTop;
+			}
+			return top;
+		}
+	
+	});
+		
+		
+		
+	</script>
+</body>
+<style>
+	
+	html {
+      margin: 0;
+      padding: 0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    .slider {
+        width: 50%;
+        margin: 100px auto;
+    }
+
+    .slick-slide {
+      margin: 0px 20px;
+    }
+
+    .slick-slide img {
+      width: 100%;
+    }
+
+    .slick-prev:before,
+    .slick-next:before {
+      color: black;
+    }
+
+
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    
+    .slick-active {
+      opacity: .5;
+    }
+
+    .slick-current {
+      opacity: 1;
+    }
+	
+		.mes{
+			background: cadetblue;
+			color: antiquewhite;
+			font-size: 33px;
+		}
+		.Semana{
+			font-size: 23px;
+			color: white;
+			background: blueviolet;
+			height: 30px;
+			width: 75px;
+			text-align: center;
+		}
+		.cuadrado{
+			height: 50px;
+			text-align: center;
+		}
+		.botonCuadrado{
+		    width: 100%;
+			height: 100%;
+			font-size: 19px;
+		}
+		.labelForm{
+			font-size: 20px;
+			font-family: sans-serif;
+			margin-left: 27px;
+		}
+		.inputForm{
+			font-size: 20px;
+			font-family: monospace;
+			margin-left: 26px;
+			margin-top: 15px;
+			width: 100%;
+		}
+	
+	</style>
+
+</html>
